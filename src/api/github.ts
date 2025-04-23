@@ -8,5 +8,10 @@ export async function fetchGitHubUser(username: string): Promise<GitHubUser> {
     }
     throw new Error('Error fetching user data');
   }
-  return response.json();
+  const data = await response.json();
+  
+  return {
+    ...data,
+    public_repos: data.public_repos,
+  };
 }

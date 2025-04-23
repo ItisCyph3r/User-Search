@@ -37,9 +37,9 @@ const UserCard: React.FC<UserCardProps> = ({ user }) => (
         
         <div className="grid grid-cols-2 gap-3 mb-4">
           <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-3 rounded-lg shadow-sm">
-            <div className="text-xs text-blue-600 font-semibold uppercase tracking-wider mb-1">Repos</div>
+            <div className="text-xs text-blue-600 font-semibold uppercase tracking-wider mb-1">Repository</div>
             <div className="flex items-baseline">
-              <span className="text-2xl font-bold text-gray-800">{user.public_repository}</span>
+              <span className="text-2xl font-bold text-gray-800">{user.public_repos}</span>
               <span className="ml-1 text-xs text-gray-500">public</span>
             </div>
           </div>
